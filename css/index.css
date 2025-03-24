@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+.check-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.check-input {
+    display: none;
+}
+
+.check-wrapper {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+button {
+    box-shadow: 0 0 6px 0 #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: black;
+}
+button:hover{
+    background-color: #4762FF;
+    color: white;
+}
+
+.check-label+.check-label {
+    margin-top: 10px;
+}
+
+.check-label:nth-child(1)>.check-input:checked~.check-wrapper {
+    background-image: url("../images/table-tannis.png");
+}
+
+.check-label:nth-child(2)>.check-input:checked~.check-wrapper {
+    background-image: url("../images/big-basket.webp");
+}
+
+.check-label:nth-child(3)>.check-input:checked~.check-wrapper {
+    background-image: url("../images/volleybol.jpg");
+}
+
+.check-label:nth-child(4)>.check-input:checked~.check-wrapper {
+    background-image: url("../images/heookey.png");
+}
+
+.check-label:nth-child(4) {
+    opacity: 50%;
+}
